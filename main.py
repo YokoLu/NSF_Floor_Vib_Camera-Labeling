@@ -107,8 +107,9 @@ Playback = True
 
 #pollvintercept Jack runs
 dir = r"StudentData/25_07-10"
-#file = r"intercept_run_7-10-2025_10-45-46 AM.asf" # Vib data run 0
-videoInputFile = r"poll_run_7-10-2025_10-50-56 AM.asf" # Vib data run 1, stomp lines up with 1 sec first window
+#file = "intercept_run_7-10-2025_10-45-46 AM.asf" # Vib data run 0
+videoInputFile = "intercept_run_7-10-2025_10-45-46 AM.asf" # Vib data run 0
+#videoInputFile = "poll_run_7-10-2025_10-50-56 AM.asf" # Vib data run 1, stomp lines up with 1 sec first window
 
 #dir = r"E:\STARS\07_10_2025_Vid_Data"
 #file = "intercept_run_7-10-2025_10-45-46 AM.asf"
@@ -147,7 +148,7 @@ vib = vibDataWindow(
     dir_path=f"{output_dir}",
     #dir_path=r"E:\STARS\StudentData\25_07_10\subject_2",
     data_file=r"Jack_clockTest_interuptVPoll.hdf5",
-    trial_to_plot=1, #First trial is 0
+    trial_to_plot=0, #First trial is 0
     old_data=False,
     window=windowLen_s
 )
